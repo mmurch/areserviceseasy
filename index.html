@@ -1,1 +1,18 @@
-<h1>NO</h1>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<script>
+  (function(){
+      $.ajax({
+        data: {
+          api_key: "we6AlhBzF3qCFZM8rlR5MoC0TyPAsm2P",
+          tag: "nope",
+          success: function(result){
+            $('#nope-gif').attr('src', result.data.url);
+          }
+        }
+      });
+  })();
+</script>
+<img id="nope-gif" style="margin: auto; width: 600px; height: 600px;" >
