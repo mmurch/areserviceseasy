@@ -11,9 +11,9 @@
           tag: "nope"
         },
         success: function(result){
-          $('#nope-gif').attr('src', result.data.url);
+          $('#nope-gif').attr('src', result.data.image_url);
         }
       });
   })();
 </script>
-<img id="nope-gif" style="margin: auto; width: 600px; height: 600px;" >
+<img id="nope-gif" style="margin: auto; width: 600px; height: 600px; display: block; margin: 100px auto;" >
