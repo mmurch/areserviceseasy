@@ -8,10 +8,10 @@
         url: "http://api.giphy.com/v1/gifs/random",
         data: {
           api_key: "we6AlhBzF3qCFZM8rlR5MoC0TyPAsm2P",
-          tag: "nope",
-          success: function(result){
-            $('#nope-gif').attr('src', result.data.url);
-          }
+          tag: "nope"
+        },
+        success: function(result){
+          $('#nope-gif').attr('src', result.data.url);
         }
       });
   })();
